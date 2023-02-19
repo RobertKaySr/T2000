@@ -249,6 +249,7 @@ section .catBtn:hover {
     line-height: 2.5rem;
     max-width: unset;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .promotionShowcase span {
@@ -291,16 +292,22 @@ section .catBtn:hover {
     min-width: 325.55px;
     max-width: 325.55px;
 }
-.banners {
-   
-}
-.location {
-    background-color: green;
 
+.hero {
+    height: 500px;
+    
+    background-color: green;
+    -webkit-mask-image: linear-gradient(#000, transparent);
+    mask-image: linear-gradient(#000, transparent);
 }
 .uniqueWrapper {
  display: flex;
  /* background-color: #0309f4; */
+}
+.banners {
+    align-items: center;
+    justify-content: center; 
+    vertical-align: center;
 }
  
 
