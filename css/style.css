@@ -302,12 +302,12 @@ section .catBtn:hover {
 }
 .uniqueWrapper {
  display: flex;
- /* background-color: #0309f4; */
+ align-items: center;
+ justify-content: center; 
+ vertical-align: center;
 }
 .banners {
-    align-items: center;
-    justify-content: center; 
-    vertical-align: center;
+
 }
  
 
