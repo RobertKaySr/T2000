@@ -6,6 +6,8 @@
     --brands-color: #AB1419;
     --white: #fff;
     --black: #000;
+    --footer: #177E89;
+    --footerSecondColor: #D33528;
 }
 
 *{
@@ -14,6 +16,9 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 
 .showcase {
     position: relative;
@@ -361,6 +366,7 @@ section .catBtn:hover {
     transition: 0.2s;
     text-transform: uppercase;
 }
+
 .brandLogoArea div:hover {
     position: relative;
     padding: 30px;
@@ -371,9 +377,128 @@ section .catBtn:hover {
     text-align: center;
     transform: scale(1.2); 
     box-shadow: 0px 1px #D33528;
+}
+
+footer {
+    background: var(--footer);
+    min-height: 500px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .contact {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+} 
+
+footer .footerDetails {
+    display: flex;
+    min-width: 900px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .locationDetails {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    line-height: 2rem;
     
-  
+}
+footer .locationDetails span {
+    display: block;
+}
+
+
+footer .phoneDetails {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    line-height: 2rem; 
+}
+
+footer .phoneDetails span {
+    display: block;
+}
+
+footer .upperPart {
+    background: var(--white);
+    display: flex;
+    min-width: 900px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+footer .infos {
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    line-height: 2;
     
+}
+
+footer .contactform {
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    line-height: 2;
+}
+
+ 
+footer .contactform p {
+    max-width: 250px;
+}
+
+.contactform h2 {
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.infos h1 {
+    color: var(--footerSecondColor);
+}
+
+.infos p {
+   margin-top: 1rem;
+   max-width: 350px;
+}
+.customField {
+    font-size: 14px;
+    position: relative;
+  }
+
+.customField input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding:12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+}
+.placeHolder {
+    background: var(--brands-color);
+    color: var(--white);
+    padding: 13.5px;
+    transition: 0.5s;
+}
+
+.customField > span:hover {
+    background: var(--brands-color);
+    color: var(--white);
+    transform: scale(1.1); 
+    font-size: 17px;
+    box-shadow: 0px 1px #D33528;
 }
 
 
